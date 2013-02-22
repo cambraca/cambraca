@@ -1,9 +1,40 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-<title>cambraca.com</title>
-<meta http-equiv="Refresh" content="0; url=http://blog.cambraca.com" />
-</head>
-<body>
-Redirecting to blog...
-</body>
+	<head>
+		<title>Canvas Carousel</title>
+
+		<meta charset="utf-8">
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/easel.js"></script>
+		<script type="text/javascript" src="js/easeljs/filters/Filter.js"></script>
+		<script type="text/javascript" src="js/easeljs/filters/ColorFilter.js"></script>
+		<script type="text/javascript" src="js/tween.js"></script>
+		<script type="text/javascript" src="js/CanvasCarousel.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() 
+			{
+				var cc = new CanvasCarousel("carousel", "load/config.xml");
+			});
+		</script>
+
+		<style>
+			body {
+				background-color: black;
+			}
+			#carousel {
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<canvas id="carousel"></canvas>
+	
+	</body>
 </html>
