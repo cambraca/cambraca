@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
- 
+<?php
+header('Content-Type:text/xml');
+echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
 <settings>
  
   <!--   GENERAL SETTINGS   -->
@@ -108,46 +110,31 @@
   
  <!--   ADD / REMOVE IMAGES FORM THE CAROUSEL   -->
  <images>
+<?php
+
+$images = array('twitter','facebook','github','linkedin','blog','gplus','soundcloud','youtube');
+$urls = array(
+	'http://twitter.com/cambraca',
+	'http://facebook.com/cambraca',
+	'http://github.com/cambraca',
+	'http://www.linkedin.com/in/cambraca',
+	'http://blog.cambraca.com',
+	'https://plus.google.com/u/0/111394655730295880367/about',
+	'https://soundcloud.com/cambraca',
+	'http://www.youtube.com/cambraca1',
+);
+$texts = array('Twitter','Facebook','GitHub','LinkedIn','Blog','Google+','SoundCloud','YouTube');
+
+$nums = range(0, count($images)-1);
+shuffle($nums);
+foreach ($nums as $k):
+?>
 	<image>
-		<image_path>load/images/twitter.png</image_path>
-		<url_to_open_on_click>http://twitter.com/cambraca</url_to_open_on_click>
-		<text>Twitter</text>
+		<image_path>load/images/<?= $images[$k] ?>.png</image_path>
+		<url_to_open_on_click><?= $urls[$k] ?></url_to_open_on_click>
+		<text><?= $texts[$k] ?></text>
 	</image>
-	<image>
-		<image_path>load/images/facebook.png</image_path>
-		<url_to_open_on_click>http://facebook.com/cambraca</url_to_open_on_click>
-		<text>Twitter</text>
-	</image>
-	<image>
-		<image_path>load/images/github.png</image_path>
-		<url_to_open_on_click>http://github.com/cambraca</url_to_open_on_click>
-		<text>GitHub</text>
-	</image>
-	<image>
-		<image_path>load/images/linkedin.png</image_path>
-		<url_to_open_on_click>http://www.linkedin.com/in/cambraca</url_to_open_on_click>
-		<text>LinkedIn</text>
-	</image>
-	<image>
-		<image_path>load/images/blog.png</image_path>
-		<url_to_open_on_click>http://blog.cambraca.com</url_to_open_on_click>
-		<text>Blog</text>
-	</image>
-	<image>
-		<image_path>load/images/gplus.png</image_path>
-		<url_to_open_on_click>https://plus.google.com/u/0/111394655730295880367/about</url_to_open_on_click>
-		<text>Google+</text>
-	</image>
-	<image>
-		<image_path>load/images/soundcloud.png</image_path>
-		<url_to_open_on_click>https://soundcloud.com/cambraca</url_to_open_on_click>
-		<text>SoundCloud</text>
-	</image>
-	<image>
-		<image_path>load/images/youtube.png</image_path>
-		<url_to_open_on_click>http://www.youtube.com/cambraca1</url_to_open_on_click>
-		<text>YouTube</text>
-	</image>
+<?php endforeach; ?>
  </images>
   
 </settings>
