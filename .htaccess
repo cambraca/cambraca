@@ -6,3 +6,7 @@ RewriteRule ^(\d{4}/.*)$ http://blog.cambraca.com/$1
 
 #redirect.php page
 RewriteRule ^redirect/([a-z]+)$ redirect.php?site=$1
+
+#remove www.
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
