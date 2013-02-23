@@ -10,6 +10,7 @@
 		'https://soundcloud.com/cambraca',
 		'http://www.youtube.com/cambraca1',
 	);
+	$texts = array('Twitter','Facebook','GitHub','LinkedIn','Blog','Google+','SoundCloud','YouTube');
 
 	$site = $_GET['site'];
 	if (!in_array($site, $images))
@@ -19,12 +20,13 @@
 	}
 
 	$url = $urls[array_search($site, $images)];
+	$title = $texts[array_search($site, $images)];
 
 ?><!DOCTYPE html>
 
 <html>
 	<head>
-		<title>Camilo Bravo</title>
+		<title><?= $title ?> redirect :: Camilo Bravo</title>
 
 		<meta charset="utf-8">
 		
