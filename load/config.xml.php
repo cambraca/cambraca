@@ -131,7 +131,7 @@ foreach ($nums as $k):
 ?>
 	<image>
 		<image_path>load/images/<?= $images[$k] ?>.png</image_path>
-		<url_to_open_on_click><?= $urls[$k] ?></url_to_open_on_click>
+		<url_to_open_on_click>/redirect/<?= $images[$k] ?></url_to_open_on_click>
 		<text><?= $texts[$k] ?></text>
 	</image>
 <?php endforeach; ?>

@@ -3,3 +3,6 @@ RewriteEngine on
 
 #redirect to blog if url starts with [year]/
 RewriteRule ^(\d{4}/.*)$ http://blog.cambraca.com/$1
+
+#redirect.php page
+RewriteRule ^redirect/([a-z]+)$ redirect.php?site=$1
