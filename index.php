@@ -43,12 +43,20 @@
 				display: block;
 				margin: 0 auto;
 			}
+			article {
+				display: none;
+			}
 		</style>
 	</head>
 	
-	<body>
+	<body itemscope itemtype="http://schema.org/Person">
 	
 		<canvas id="carousel"></canvas>
+		
+		<article>
+		<h1 itemprop="name">Camilo Bravo</h1>
+		<img src="http://www.gravatar.com/avatar/<?= md5('cambraca@gmail.com') ?>.jpg?size=400" itemprop="image" />
+		</article>
 	
 	</body>
 </html>
