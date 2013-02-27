@@ -21,10 +21,9 @@
 				var cc = new CanvasCarousel("carousel", "load/config.xml.php");
 				$('body').prepend('<div id="video-background"></div>');
 				$('#video-background').videobackground({
-					videoSource: ['video/bg.mp4',
-						'video/bg.webm', 
-						'video/bg.ogv'], 
-					controlPosition: 'body',
+					videoSource: [['video/bg.mp4', 'video/mp4'],
+						['video/bg.webm', 'video/webm'], 
+						['video/bg.ogv', 'video/ogg']], 
 					poster: 'video/bg.jpg',
 					loop: true
 				});
@@ -70,7 +69,7 @@
 			}
 			#video-background video {
 				min-height: 100%; 
-				min-width:100%; 
+				min-width: 100%; 
 			}
 		</style>
 	</head>
