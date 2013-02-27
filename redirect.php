@@ -2,20 +2,19 @@
 	include_once 'settings.php';
 
 	$site = $_GET['site'];
-	if (!in_array($site, $images))
+	if (!array_key_exists($site, $links))
 	{
 		header('Location: /');
 		exit;
 	}
 
-	$url = $urls[array_search($site, $images)];
-	$title = $texts[array_search($site, $images)];
+	$link = $links[$site];
 
 ?><!DOCTYPE html>
 
 <html>
 	<head>
-		<title><?= $title ?> redirect :: Camilo Bravo</title>
+		<title><?= $link->title ?> redirect :: Camilo Bravo</title>
 
 		<meta charset="utf-8">
 		
@@ -33,10 +32,10 @@
 
 		</script>
 
-		<meta http-equiv="Refresh" content="1; url=<?= $url ?>" />
+		<meta http-equiv="Refresh" content="1; url=<?= $link->url ?>" />
 	</head>
 	
 	<body>
-	<a href="<?= $url ?>">Redirecting</a>...
+	<a href="<?= $link->url ?>">Redirecting</a>...
 	</body>
 </html>

@@ -6,7 +6,8 @@
 
 		<meta charset="utf-8">
 		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/JavaScript" src="js/jquery.videobackground.js"></script>
 		<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="js/easel.js"></script>
 		<script type="text/javascript" src="js/easeljs/filters/Filter.js"></script>
@@ -18,6 +19,15 @@
 			$(document).ready(function() 
 			{
 				var cc = new CanvasCarousel("carousel", "load/config.xml.php");
+				$('body').prepend('<div id="video-background"></div>');
+				$('#video-background').videobackground({
+					videoSource: ['video/bg.mp4',
+						'video/bg.webm', 
+						'video/bg.ogv'], 
+					controlPosition: 'body',
+					poster: 'video/bg.jpg',
+					loop: true
+				});
 			});
 		</script>
 
@@ -38,13 +48,29 @@
 		<style>
 			body {
 				background-color: black;
+				overflow: hidden;
 			}
 			#carousel {
 				display: block;
 				margin: 0 auto;
+				background: transparent !important;
+				position: relative;
 			}
 			article {
 				display: none;
+			}
+			#video-background {
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+			}
+			#video-background video {
+				min-height: 100%; 
+				min-width:100%; 
 			}
 		</style>
 	</head>

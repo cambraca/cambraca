@@ -33,9 +33,9 @@
 	<open_link_on_image_click>yes</open_link_on_image_click>
 	<window_open_location>_self</window_open_location>
 	<show_reflection>yes</show_reflection>
-	<reflection_height>100</reflection_height>
-	<reflection_distance>1</reflection_distance>
-	<reflection_transparency>0.5</reflection_transparency>
+	<reflection_height>130</reflection_height>
+	<reflection_distance>0</reflection_distance>
+	<reflection_transparency>0.1</reflection_transparency>
 	<!--   SLIDE SHOW PRELOADER SETTINGS   -->
 	<slide_show_preloader_x_position>20</slide_show_preloader_x_position>
 	<slide_show_preloader_y_position>680</slide_show_preloader_y_position>
@@ -76,14 +76,22 @@
 	<!--   ADD / REMOVE IMAGES FORM THE CAROUSEL   -->
 	<images>
 		<?php
-			$nums = range(0, count($images) - 1);
-			shuffle($nums);
-			foreach ($nums as $k):
+			function shuffle_assoc(&$array)
+			{
+				$keys = array_keys($array);
+				shuffle($keys);
+				foreach ($keys as $key)
+					$new[$key] = $array[$key];
+				$array = $new;
+				return true;
+			}
+			shuffle_assoc($links);
+			foreach ($links as $image => $link):
 				?>
 				<image>
-				<image_path>load/images/<?= $images[$k] ?>.png</image_path>
-				<url_to_open_on_click>/redirect/<?= $images[$k] ?></url_to_open_on_click>
-				<text><?= $texts[$k] ?></text>
+				<image_path>load/images/<?= $image ?>.png</image_path>
+				<url_to_open_on_click>/redirect/<?= $image ?></url_to_open_on_click>
+				<text><?= $link->title ?></text>
 				</image>
 			<?php endforeach; ?>
 	</images>
