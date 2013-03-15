@@ -12,6 +12,7 @@
 	}
 	
 	$links = array(
+		'email'			=> new Link('mailto:hola@cambraca.com', 'Email'),
 		'twitter'		=> new Link('http://twitter.com/cambraca', 'Twitter'),
 //		'facebook'		=> new Link('http://facebook.com/cambraca', 'Facebook'),
 		'github'		=> new Link('http://github.com/cambraca', 'GitHub'),
