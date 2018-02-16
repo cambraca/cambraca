@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script type="text/JavaScript" src="js/jquery.videobackground.js"></script>
 		<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="js/easel.js"></script>
@@ -74,13 +74,13 @@
 		</style>
 	</head>
 	
-	<body itemscope itemtype="http://schema.org/Person">
+	<body itemscope itemtype="https://schema.org/Person">
 	
 		<canvas id="carousel"></canvas>
 		
 		<article>
 		<h1 itemprop="name">Camilo Bravo</h1>
-		<img src="http://www.gravatar.com/avatar/<?= md5('cambraca@gmail.com') ?>.jpg?size=400" itemprop="image" />
+		<img src="https://www.gravatar.com/avatar/<?= md5('cambraca@gmail.com') ?>.jpg?size=400" itemprop="image" />
 		</article>
 	
 	</body>
