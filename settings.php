@@ -23,4 +23,5 @@
 		'youtube'		=> new Link('http://www.youtube.com/cambraca1', 'YouTube'),
 		'stackoverflow'	=> new Link('http://stackoverflow.com/users/368864/cambraca', 'Stack Overflow'),
 		'toptal'	=> new Link('http://www.toptal.com/drupal#amazing-cms', 'Toptal'),
+		'todayilearned'	=> new Link('https://todayilearned.cambraca.com', 'Today I Learned'),
 	);
