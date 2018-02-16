@@ -90,7 +90,7 @@
 				?>
 				<image>
 				<image_path>load/images/<?= $image ?>.png</image_path>
-				<url_to_open_on_click>/redirect/<?= $image ?></url_to_open_on_click>
+				<url_to_open_on_click>/redirect.php?site=<?= $image ?></url_to_open_on_click>
 				<text><?= $link->title ?></text>
 				</image>
 			<?php endforeach; ?>
