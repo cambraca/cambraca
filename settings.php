@@ -17,7 +17,7 @@
 //		'facebook'		=> new Link('http://facebook.com/cambraca', 'Facebook'),
 		'github'		=> new Link('http://github.com/cambraca', 'GitHub'),
 		'linkedin'		=> new Link('http://www.linkedin.com/in/cambraca', 'LinkedIn'),
-		'blog'			=> new Link('http://blog.cambraca.com', 'Blog'),
+//		'blog'			=> new Link('http://blog.cambraca.com', 'Blog'),
 //		'gplus'			=> new Link('https://plus.google.com/u/0/111394655730295880367/about', 'Google+'),
 		'soundcloud'	=> new Link('https://soundcloud.com/cambraca', 'SoundCloud'),
 		'youtube'		=> new Link('http://www.youtube.com/cambraca1', 'YouTube'),
