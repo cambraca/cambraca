@@ -25,7 +25,8 @@
 						['video/bg.webm', 'video/webm'], 
 						['video/bg.ogv', 'video/ogg']], 
 					poster: 'video/bg.jpg',
-					loop: true
+					loop: true,
+					muted: true,
 				});
 			});
 		</script>
