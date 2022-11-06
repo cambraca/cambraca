@@ -1,9 +1,10 @@
 <?php
 	include_once 'settings.php';
 
-	$site = $_GET['site'];
+	$site = trim($_GET['site'], '/');
 	if (!array_key_exists($site, $links))
 	{
+die('*'.$site.'*');
 		header('Location: /');
 		exit;
 	}
@@ -14,7 +15,7 @@
 
 <html>
 	<head>
-		<title><?= $link->title ?> redirect :: Camilo Bravo</title>
+		<title><?= $link->title ?> :: Camilo Bravo</title>
 
 		<meta charset="utf-8">
 		

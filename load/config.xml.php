@@ -87,6 +87,7 @@
 			}
 			shuffle_assoc($links);
 			foreach ($links as $image => $link):
+				if ($link->hidden) continue;
 				?>
 				<image>
 				<image_path>load/images/<?= $image ?>.png</image_path>

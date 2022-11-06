@@ -80,6 +80,7 @@
 		<canvas id="carousel"></canvas>
 		
 		<article>
+		<a rel="me" href="https://mastodon.online/@cambraca">Mastodon</a>
 		<h1 itemprop="name">Camilo Bravo</h1>
 		<img src="https://www.gravatar.com/avatar/<?= md5('cambraca@gmail.com') ?>.jpg?size=400" itemprop="image" />
 		</article>
