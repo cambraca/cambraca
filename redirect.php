@@ -19,19 +19,15 @@ die('*'.$site.'*');
 
 		<meta charset="utf-8">
 		
-		<script type="text/javascript">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZF7J0K2LE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-38738043-1']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
+  gtag('config', 'G-KZF7J0K2LE');
+</script>
 
 		<meta http-equiv="Refresh" content="1; url=<?= $link->url ?>" />
 	</head>
