@@ -14,7 +14,7 @@
 	
 	$links = array(
 		'email'			=> new Link('mailto:hola@cambraca.com', 'Email'),
-		'mastodon'		=> new Link('https://sunny.garden/@cambraca', 'Mastodon'),
+		'mastodon'		=> new Link('https://musicians.today/@cambraca', 'Mastodon'),
 		'twitter'		=> new Link('https://twitter.com/cambraca', 'Twitter', TRUE),
 		'facebook'		=> new Link('https://facebook.com/cambraca', 'Facebook', TRUE),
 		'github'		=> new Link('https://github.com/cambraca', 'GitHub'),

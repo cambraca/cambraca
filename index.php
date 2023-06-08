@@ -80,7 +80,7 @@
 		<canvas id="carousel"></canvas>
 		
 		<article>
-		<a rel="me" href="https://sunny.garden/@cambraca">Mastodon</a>
+		<a rel="me" href="https://musicians.today/@cambraca">Mastodon</a>
 		<h1 itemprop="name">Camilo Bravo</h1>
 		<img src="https://www.gravatar.com/avatar/<?= md5('cambraca@gmail.com') ?>.jpg?size=400" itemprop="image" />
 		</article>
