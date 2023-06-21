@@ -1,9 +1,10 @@
 <?php
-	
+
 	class Link
 	{
 		public $url;
 		public $title;
+		public $hidden;
 		public function __construct($url, $title, $hidden = FALSE)
 		{
 			$this->url = $url;
@@ -11,7 +12,7 @@
 			$this->hidden = $hidden;
 		}
 	}
-	
+
 	$links = array(
 		'email'			=> new Link('mailto:hola@cambraca.com', 'Email'),
 		'mastodon'		=> new Link('https://musicians.today/@cambraca', 'Mastodon'),
