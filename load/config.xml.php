@@ -26,8 +26,8 @@
 	<border_size>0</border_size>
 	<border_color>#FFFFFF</border_color>
 	<show_tooltip>yes</show_tooltip>
-	<tooltip_font>Verdana</tooltip_font>
-	<tooltip_text_size>14</tooltip_text_size>
+	<tooltip_font>sans-serif</tooltip_font>
+	<tooltip_text_size>18</tooltip_text_size>
 	<tooltip_text_color>#000000</tooltip_text_color>
 	<tooltip_background_color>#FFFFFF</tooltip_background_color>
 	<open_link_on_image_click>yes</open_link_on_image_click>
