@@ -28,7 +28,7 @@
 		'toptal'	=> new Link('https://www.toptal.com/resume/camilo-bravo', 'Toptal'),
 		'todayilearned'	=> new Link('https://todayilearned.cambraca.com', 'Today I Learned'),
 
-		'volatil'		=> new Link('https://www.youtube.com/playlist?list=PLw2okqUZvAIaq3sgY_5JvJC7DVZ8T1Mz2', 'Volatil'),
+		'volatil'		=> new Link('volatil', 'Volatil'),
 		'volatil_bandcamp'		=> new Link('https://cambraca.bandcamp.com/album/volatil', 'Volatil @ Bandcamp', TRUE),
 		'volatil_distrokid'		=> new Link('https://distrokid.com/hyperfollow/camilobravo/volatil', 'Volatil @ DistroKid', TRUE),
 //		'volatil_spotify'		=> new Link('https://www.youtube.com/playlist?list=PLw2okqUZvAIaq3sgY_5JvJC7DVZ8T1Mz2', 'Volatil @ Spotify', TRUE),
