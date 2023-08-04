@@ -60,13 +60,13 @@
 			height: auto;
 		}
 
-		@media not screen and (min-width: 1024px) and (min-height: 1024px) {
+		@media not screen and (min-width: 1024px) and (min-height: 960px) {
 			#carousel {
 				display: none;
 			}
 		}
 
-		@media screen and (min-width: 1024px) and (min-height: 1024px) {
+		@media screen and (min-width: 1024px) and (min-height: 960px) {
 			body {
 				overflow: hidden;
 				text-align: center;
