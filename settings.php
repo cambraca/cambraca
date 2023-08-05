@@ -31,7 +31,7 @@
 		'volatil'		=> new Link('volatil', 'Volatil'),
 		'volatil_bandcamp'		=> new Link('https://cambraca.bandcamp.com/album/volatil', 'Volatil @ Bandcamp', TRUE),
 		'volatil_distrokid'		=> new Link('https://distrokid.com/hyperfollow/camilobravo/volatil', 'Volatil @ DistroKid', TRUE),
-//		'volatil_spotify'		=> new Link('https://www.youtube.com/playlist?list=PLw2okqUZvAIaq3sgY_5JvJC7DVZ8T1Mz2', 'Volatil @ Spotify', TRUE),
+		'volatil_spotify'		=> new Link('https://open.spotify.com/album/39qfe1uHi7WVPZdYcvx6fL', 'Volatil @ Spotify', TRUE),
 //		'volatil_soundcloud'	=> new Link('https://www.youtube.com/playlist?list=PLw2okqUZvAIaq3sgY_5JvJC7DVZ8T1Mz2', 'Volatil @ SoundCloud', TRUE),
 		'volatil_youtube'		=> new Link('https://music.youtube.com/playlist?list=OLAK5uy_knL1sOscpUXc6QOTyCLHoqiNiutOphrug', 'Volatil @ YouTube', TRUE),
 		'volatil_apple'		=> new Link('https://music.apple.com/us/album/volatil/1701049457', 'Volatil @ Apple Music', TRUE),

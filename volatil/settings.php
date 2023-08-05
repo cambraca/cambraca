@@ -15,7 +15,7 @@
 	$links = array(
 		'bandcamp'		=> new Link('https://cambraca.bandcamp.com/album/volatil', 'Bandcamp'),
 		'distrokid'		=> new Link('https://distrokid.com/hyperfollow/camilobravo/volatil', 'DistroKid'),
-//		'spotify'		=> new Link('https://musicians.today/@cambraca', 'Spotify'),
+		'spotify'		=> new Link('https://open.spotify.com/album/39qfe1uHi7WVPZdYcvx6fL', 'Spotify'),
 //		'soundcloud'	=> new Link('https://soundcloud.com/cambraca', 'SoundCloud'),
 		'youtube'		=> new Link('https://music.youtube.com/playlist?list=OLAK5uy_knL1sOscpUXc6QOTyCLHoqiNiutOphrug', 'YouTube'),
 		'apple'			=> new Link('https://music.apple.com/us/album/volatil/1701049457', 'Apple Music'),
