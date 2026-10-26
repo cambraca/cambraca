@@ -113,11 +113,12 @@
 
 	<ul id="mobile-links">
 		<?php
-		include_once 'settings.php';
+		require_once __DIR__ . '/settings.php';
 		function shuffle_assoc(&$array)
 		{
 			$keys = array_keys($array);
 			shuffle($keys);
+			$new = [];
 			foreach ($keys as $key)
 				$new[$key] = $array[$key];
 			$array = $new;
@@ -128,8 +129,8 @@
 			if ($link->hidden) continue;
 			?>
 			<li>
-				<a href="/redirect.php?site=volatil_<?= $image ?>">
-					<img src="logos/<?= $image ?>.png" alt="<?= $link->title ?>">
+				<a href="/redirect.php?site=volatil_<?= htmlspecialchars((string) $image, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>">
+					<img src="logos/<?= htmlspecialchars((string) $image, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>.png" alt="<?= htmlspecialchars((string) $link->title, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>">
 				</a>
 			</li>
 		<?php endforeach; ?>

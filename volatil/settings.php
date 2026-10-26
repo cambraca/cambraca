@@ -4,6 +4,7 @@
 	{
 		public $url;
 		public $title;
+		public $hidden = FALSE;
 		public function __construct($url, $title, $hidden = FALSE)
 		{
 			$this->url = $url;

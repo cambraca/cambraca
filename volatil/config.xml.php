@@ -1,5 +1,5 @@
 <?php
-	include_once 'settings.php';
+	require_once __DIR__ . '/settings.php';
 	header('Content-Type:text/xml');
 	echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?><settings>
@@ -80,6 +80,7 @@
 			{
 				$keys = array_keys($array);
 				shuffle($keys);
+				$new = [];
 				foreach ($keys as $key)
 					$new[$key] = $array[$key];
 				$array = $new;
@@ -90,9 +91,9 @@
 				if ($link->hidden) continue;
 				?>
 				<image>
-				<image_path>logos/<?= $image ?>.png</image_path>
-				<url_to_open_on_click>/redirect.php?site=volatil_<?= $image ?></url_to_open_on_click>
-				<text><?= $link->title ?></text>
+				<image_path>logos/<?= htmlspecialchars((string) $image, ENT_QUOTES | ENT_SUBSTITUTE | ENT_XML1, 'UTF-8') ?>.png</image_path>
+				<url_to_open_on_click>/redirect.php?site=volatil_<?= htmlspecialchars((string) $image, ENT_QUOTES | ENT_SUBSTITUTE | ENT_XML1, 'UTF-8') ?></url_to_open_on_click>
+				<text><?= htmlspecialchars((string) $link->title, ENT_QUOTES | ENT_SUBSTITUTE | ENT_XML1, 'UTF-8') ?></text>
 				</image>
 			<?php endforeach; ?>
 	</images>
